@@ -1,4 +1,4 @@
-Exibe informações detalhadas sobre o hardware do sistema
+Exibe informações detalhadas sobre o **hardware** do sistema
 
 lshw (Lista tudo)
 
@@ -14,10 +14,10 @@ lshw -class network
        configuração: driver=iwlwifi
 
 
-lswh -html 
+**lswh -html** 
 Mostra as informações em formato html
 
-lswh -html > hardware.html
+**lswh -html > hardware.htm**l
 gera um arquivo (hardware.html) formatado em html que dá pra abrir no navegador.
 
 
