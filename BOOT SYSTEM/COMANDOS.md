@@ -1,7 +1,11 @@
 
 ##### **dmesg**: 
 O comando '**dmesg**' exibe mensagens do kernel e do sistema geradas durante o **processo** de **inicialização**. Ele é útil para diagnosticar problemas relacionados ao **hardware** e ao **kernel**.
+<<<<<<< HEAD
 O comando `dmesg` não é específico de um sistema de inicialização, seja `sysvinit` ou `systemd`. Ele é um utilitário do Linux que exibe as mensagens do buffer circular do kernel. Esse buffer registra mensagens relacionadas ao hardware, inicialização do sistema, drivers e outros eventos do kernel. Tanto sistemas que usam `sysvinit` quanto `systemd` podem utilizar o comando `dmesg`.
+=======
+- Verifica os eventos de inicialização nos arquivos de log.
+>>>>>>> 9f0ab76ec2a64cfc25efead11be236dbd86e430e
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
