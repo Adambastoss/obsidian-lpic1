@@ -7,6 +7,11 @@
 │   ├── Substitui as unidades padrão
 │   └── Local de overrides (ex: override.conf)
 
+├── ==/lib/systemd/system/==   ou   ==/usr/lib/systemd/system/==
+│   ├── 📦 INSTALADO PELOS PACOTES
+│   ├── Contém unidades padrão do sistema
+│   └── NÃO deve ser editado diretamente
+
 ├── ==/usr/lib/systemd/user/==
 │   ├── 📦 Unidades de usuário instaladas por pacotes
 │   └── Similar ao /lib/systemd/system/, mas no contexto do usuário
