@@ -7,3 +7,5 @@ No Linux, o comando **ls /sys/firmware/efi** verifica se esse diretório existe.
 Uma das vantagens do UEFI em relação à BIOS é o suporte à inicialização segura (**Secure Boot**), que ajuda a proteger o sistema contra malware durante o processo de boot.
 
 A UEFI requer o uso da tabela de partição **GPT** (GUID Partition Table) para inicializar sistemas, pois ela suporta discos maiores que 2 TB e oferece maior flexibilidade em comparação ao MBR.
+
+[[BOOT]]

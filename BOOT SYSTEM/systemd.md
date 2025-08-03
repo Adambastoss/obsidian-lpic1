@@ -1,8 +1,20 @@
 
 **Principais diretórios:**
 
+├──==/etc/systemd/system/==
+│   ├── ✅ PRIORIDADE MAIS ALTA
+│   ├── Armazena unidades personalizadas pelo administrador
+│   ├── Substitui as unidades padrão
+│   └── Local de overrides (ex: override.conf)
 
+├── ==/usr/lib/systemd/user/==
+│   ├── 📦 Unidades de usuário instaladas por pacotes
+│   └── Similar ao /lib/systemd/system/, mas no contexto do usuário
 
+├── ==/run/systemd/system/==
+│   ├── ⚡ TEMPORÁRIO (runtime)
+│   ├── Unidades geradas em tempo de execução
+│   └── Desaparecem após reboot
 
 Principais características:
 
@@ -67,7 +79,7 @@ Definir um target padrão no boot:
 systemctl **set-default** graphical.target
 
 Verificar o target atual:
-systemctl get-default
+systemctl **get-default**
 
 
 
