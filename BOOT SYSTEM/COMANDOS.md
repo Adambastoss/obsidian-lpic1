@@ -30,8 +30,9 @@ Qual comando do journalctl exibe mensagens em ordem inversa, começando pelas ma
 Qual comando lista todos os meus boots?
 **journalctl --list-boots**
 
-
-
+**wall**
+Serve para ==enviar mensagens para todos os usuários atualmente conectados ao sistema==.
+**wall** "O sistema será reiniciado em 5 minutos. Por favor, salve seu trabalho."
 
 
 
