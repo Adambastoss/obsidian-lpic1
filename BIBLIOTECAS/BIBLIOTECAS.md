@@ -34,6 +34,16 @@ As bibliotecas costumam estar nos diretórios:
 - Outros locais configurados via variável ou arquivo de configuração.
 
 
+### 📁 Diretórios principais:
+
+|Diretório|Uso comum|
+|---|---|
+|`/lib`|Bibliotecas essenciais para o sistema (arquitetura 32 bits ou genérica)|
+|`/lib64`|Bibliotecas para sistemas 64 bits|
+|`/usr/lib`|Bibliotecas de programas não essenciais do sistema|
+|`/usr/lib64`|Versão 64 bits das bibliotecas em `/usr/lib`|
+
+
 ### `/etc/ld.so.conf` e `/etc/ld.so.conf.d/`
 
 Esses arquivos informam ao sistema onde procurar bibliotecas adicionais.
