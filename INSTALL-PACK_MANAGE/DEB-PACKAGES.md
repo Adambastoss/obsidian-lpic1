@@ -61,7 +61,7 @@ Se algo falhar **durante a configuração**, o pacote ficará com o status de **
 
 
 
-# ==**GERENCIADOR DE PACOTES**== de ==ALTO NÍVEL==
+# **GERENCIADOR DE PACOTES** de ==ALTO NÍVEL==
 
 Resolve todas as dependências de forma automática
 
@@ -111,16 +111,16 @@ Resolve todas as dependências de forma automática
 
 ## 🧠 Principais comandos `apt` para a LPIC-1
 
-| Comando                      | Função                                                                          |     |     |     |     |
-| ---------------------------- | ------------------------------------------------------------------------------- | --- | --- | --- | --- |
-| `apt update`                 | Atualiza a lista de pacotes disponíveis nos repositórios                        |     |     |     |     |
-| `apt upgrade`                | Atualiza todos os pacotes instalados para as versões mais recentes              |     |     |     |     |
-| `apt install nome_do_pacote` | Instala um novo pacote                                                          |     |     |     |     |
-| `apt remove nome_do_pacote`  | Remove um pacote (mantém arquivos de configuração)                              |     |     |     |     |
-| `apt purge nome_do_pacote`   | Remove completamente o pacote, incluindo arquivos de configuração               |     |     |     |     |
-| `apt autoremove`             | Remove pacotes que não são mais necessários                                     |     |     |     |     |
-| `apt search termo`           | Pesquisa por pacotes nos repositórios                                           |     |     |     |     |
-| `apt show nome_do_pacote`    | Mostra detalhes sobre um pacote                                                 |     |     |     |     |
-| `apt list`                   | Lista pacotes disponíveis, instalados ou atualizáveis                           |     |     |     |     |
-| `apt full-upgrade`           | Similar ao `dist-upgrade`: atualiza pacotes e lida com mudanças de dependências |     |     |     |     |
-| `apt clean`                  | Limpa o cache de pacotes baixados                                               |     |     |     |     |
+| ==Comando==                      | Função                                                                          |
+| ---------------------------- | ------------------------------------------------------------------------------- |
+| ==`apt update`==                 | Atualiza a lista de pacotes disponíveis nos repositórios                        |
+| ==`apt upgrade`==                | Atualiza todos os pacotes instalados para as versões mais recentes              |
+| ==`apt install nome_do_pacote`== | Instala um novo pacote                                                          |
+| ==`apt remove nome_do_pacote`==  | Remove um pacote (mantém arquivos de configuração)                              |
+| ==`apt purge nome_do_pacote`==   | Remove completamente o pacote, incluindo arquivos de configuração               |
+| ==`apt autoremove`==             | Remove pacotes que não são mais necessários                                     |
+| ==`apt search termo`==           | Pesquisa por pacotes nos repositórios                                           |
+| ==`apt show nome_do_pacote`==    | Mostra detalhes sobre um pacote                                                 |
+| ==`apt list`==                   | Lista pacotes disponíveis, instalados ou atualizáveis                           |
+| ==`apt full-upgrade`==           | Similar ao `dist-upgrade`: atualiza pacotes e lida com mudanças de dependências |
+| ==`apt clean`==                  | Limpa o cache de pacotes baixados                                               |
