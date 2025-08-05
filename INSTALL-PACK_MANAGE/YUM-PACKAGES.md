@@ -47,3 +47,9 @@
     
 - Use **`yum list updates`** para consulta manual (mais legível para humanos)
 
+###### **MOSTRAR AS DEPENDÊNCIAS DE UM PACOTE:**
+``yum deplist nome_pacote
+
+###### **DESCOBRE QUAL PACOTE FORNECE UM ARQUIVO:**
+``yum provides <arquivo>
+

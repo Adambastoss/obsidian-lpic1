@@ -53,20 +53,6 @@
 	- ``rpm -qf caminho do arquivo
 
 
-- Conscientização sobre dnf.
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##### **rpm2cpio**
 
 O `rpm2cpio` é uma ferramenta útil para **extrair** o conteúdo de um pacote RPM sem instalá-lo no sistema. Ele converte o pacote RPM no formato cpio (um formato de arquivamento), permitindo que você acesse os arquivos contidos no pacote.
