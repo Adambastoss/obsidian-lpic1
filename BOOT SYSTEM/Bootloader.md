@@ -7,8 +7,8 @@ Comando para instalação:
 
 Comando para atualizar o grub:
 **update-grub**
-Geralmente será utilizado após alguma edição do grupo em ==/etc/default/grub==
-Caso não haja o comando update-grub, utilizar o comando grub-mkconfig
+Geralmente será utilizado após alguma edição do grub em ==/etc/default/grub==
+Caso não haja o comando update-grub, utilizar o comando **grub-mkconfig**
 
 Arquivo para inserir **entradas personalizadas** no menu de inicialização:
 /etc/grub.d/==40_custom==

@@ -5,7 +5,7 @@
 - Encontre pacotes contendo arquivos ou bibliotecas específicas que podem ou não estar instalados.
 - Obtenha informações do pacote, como versão, conteúdo, dependências, integridade do pacote e status da instalação (se o pacote está instalado ou não).
 - Consciência de apt.
->
+
 - **/etc/apt/sources.list**
 		Ele contém uma lista de repositórios onde o APT busca pacotes para instalação, atualização e remoção.
 
@@ -40,7 +40,8 @@ Gerenciador de baixo nível padrão: **dpkg**
 ==LISTAR TODOS OS PACOTES INSTALADOS:==
 **dpkg -l**
 
-> 
+==RECONFIGURAR UM PACOTE INSTALADO:==
+**dpkg-reconfigure nome_pacote**
 
 ==CONFIGURAR UM PACOTE:==
 **dpkg --configure nome_pacote**
@@ -56,8 +57,7 @@ Durante a instalação de um pacote `.deb`, o `dpkg` segue basicamente **duas et
 Se algo falhar **durante a configuração**, o pacote ficará com o status de **"unconfigured"**. É aí que o `dpkg --configure` entra.
 
 
-==RECONFIGURAR UM PACOTE INSTALADO:==
-**dpkg-reconfigure nome_pacote**
+
 
 
 

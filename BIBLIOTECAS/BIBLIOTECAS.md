@@ -36,12 +36,18 @@ As bibliotecas costumam estar nos diretórios:
 
 ### 📁 Diretórios principais:
 
-|Diretório|Uso comum|
-|---|---|
-|`/lib`|Bibliotecas essenciais para o sistema (arquitetura 32 bits ou genérica)|
-|`/lib64`|Bibliotecas para sistemas 64 bits|
-|`/usr/lib`|Bibliotecas de programas não essenciais do sistema|
-|`/usr/lib64`|Versão 64 bits das bibliotecas em `/usr/lib`|
+| Diretório    | Uso comum                                                               |
+| ------------ | ----------------------------------------------------------------------- |
+| `/lib`       | Bibliotecas essenciais para o sistema (arquitetura 32 bits ou genérica) |
+| `/lib64`     | Bibliotecas para sistemas 64 bits                                       |
+| `/usr/lib`   | Bibliotecas de programas não essenciais do sistema                      |
+| `/usr/lib64` | Versão 64 bits das bibliotecas em `/usr/lib`                            |
+### 📌 Explicação rápida:
+
+- **`/lib`e`/lib64`** : usado para bibliotecas que o sistema precisa **logo na inicialização** .  
+    Ex: bibliotecas usadas pelo `/bin/sh`ou `/sbin/init`.
+    
+- **`/usr/lib`e`/usr/lib64`** : armazenam bibliotecas de programas que **não são críticas para o boot** , mas são usadas no dia a dia.
 
 
 ### `/etc/ld.so.conf` e `/etc/ld.so.conf.d/`
@@ -68,11 +74,17 @@ Gerenciar ou cache de bibliotecas compartilhadas no sistema. Ele:
     
 - Leia os diretórios padrão e os listados em `/etc/ld.so.conf`.
 
-- **Deve ser executado sempre que se adiciona um arquivo de configuração** 
+- **Deve ser executado sempre que se adiciona um arquivo de configuração** ou realiza alguma modificação dentro do diretório  ==/etc/ld.so.conf.d/==
 
 
 ### `ldd`
-Exibe bibliotecas permitidas por um binário.
+Serve para **listar as bibliotecas compartilhadas** (dynamic libraries) que um determinado **programa** ou biblioteca **precisa** para funcionar, porém você precisa especificar o **caminho completo** do binário, conforme o exemplo abaixo:
+
+Ex: **ldd** ==/usr/bin/ls==
+Comando exibe todas as libs que o comando ls precisa para funcionar.
+
+### `objdump`
+Exibe **informações detalhadas** sobre arquivos **objeto**, como executáveis e bibliotecas.
 
 ### Variável de ambiente `LD_LIBRARY_PATH`
 
