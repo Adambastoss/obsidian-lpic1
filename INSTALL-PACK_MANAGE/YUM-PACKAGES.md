@@ -14,7 +14,7 @@
 ###### **INSTALAR UM PACOTE:**
 ``yum install nome_pacote
 
-###### **ATUALIZAR UM PACOTE:**
+###### **ATUALIZAR UM PACOTE ESPECÍFICO:**
 ``yum update nome_pacote
 
 ###### **ATUALIZAR TODOS OS PACOTES DE FATO** (*não os respositórios*)
@@ -35,6 +35,15 @@
 ###### **LISTAR PACOTES DISPONÍVEIS PARA INSTALAÇÃO:**
 ``yum list available
 
+###### **LISTA TODOS OS PACOTES COM ATUALIZAÇÕES DISPONÍVEIS:**
 
+| Lista **detalhes** como versão atual e nova versão disponível.
+	``yum list updates 	
+	``yum check-update
 
+## **Quando usar cada um:**
+
+- Use **`yum check-update`** em scripts (para verificar via código de saída)
+    
+- Use **`yum list updates`** para consulta manual (mais legível para humanos)
 
