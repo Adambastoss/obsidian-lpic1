@@ -5,7 +5,8 @@
 - Encontre pacotes contendo arquivos ou bibliotecas específicas que podem ou não estar instalados.
 - Obtenha informações do pacote, como versão, conteúdo, dependências, integridade do pacote e status da instalação (se o pacote está instalado ou não).
 - Consciência de apt.
->
+
+
 - **/etc/apt/sources.list**
 		Ele contém uma lista de repositórios onde o APT busca pacotes para instalação, atualização e remoção.
 

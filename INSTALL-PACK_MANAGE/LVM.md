@@ -1,4 +1,4 @@
-## Objetivo principal do LVM:
+c## Objetivo principal do LVM:
 
 > Permitir que você **crie, redimensione, combine, migre e gerencie volumes de armazenamento** de forma dinâmica — sem precisar reinicializar o sistema ou reinstalar o SO.
 
