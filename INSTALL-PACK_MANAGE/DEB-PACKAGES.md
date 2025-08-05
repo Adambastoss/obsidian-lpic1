@@ -7,6 +7,8 @@
 - Consciência de apt.
 >
 - **/etc/apt/sources.list**
+		Ele contém uma lista de repositórios onde o APT busca pacotes para instalação, atualização e remoção.
+
 - dpkg
 - dpkg-reconfigure
 - apt-get
@@ -18,7 +20,6 @@ Temos gerenciadores de pacotes de **baixo** nível e de **alto** nível
 ==Baixo== nível: **Não** tratam dependências
 Gerenciador de baixo nível padrão: **dpkg**
 
->
 
 ==INSTALAR UM PACOTE:==
 **dpkg -i pacote.deb**
@@ -55,14 +56,14 @@ Durante a instalação de um pacote `.deb`, o `dpkg` segue basicamente **duas et
 Se algo falhar **durante a configuração**, o pacote ficará com o status de **"unconfigured"**. É aí que o `dpkg --configure` entra.
 
 
-
 ==RECONFIGURAR UM PACOTE INSTALADO:==
 **dpkg-reconfigure nome_pacote**
 
 
 
-**GERENCIADOR DE PACOTES** de ==ALTO NÍVEL==
-#### Resolve todas as **dependências** de forma **automática**
+# ==**GERENCIADOR DE PACOTES**== de ==ALTO NÍVEL==
+
+Resolve todas as dependências de forma automática
 
 - `apt`:
     
@@ -75,3 +76,51 @@ Se algo falhar **durante a configuração**, o pacote ficará com o status de **
 **ATUALIZA A LISTA DE PACOTES DISPONÍVEIS:**
 ==apt-get update==
 
+**ATUALIZA TODOS OS PACOTES INSTALADOS:**
+==apt-get upgrade==
+
+**INSTALA UM PACOTE:**
+==apt-get install nome_pacote==
+
+**REMOVE UM PACOTE (MANTÉM ARQUIVOS DE CONFIGURAÇÃO):**
+==apt-get remove nome_pacote==
+
+**REMOVE UM PACOTE E SEUS ARQUIVOS DE CONFIGURAÇÃO:**
+==apt-get purge nome_pacote==
+
+**REMOVE PACOTES INSTALADOS COMO DEPENDENCIA E NÃO MAIS NECESSÁRIOS:**
+==apt-get autoremove==
+
+**CORRIGIR DEPENDÊNCIAS QUEBRADAS:**
+==apt-get install -f==
+
+### COMANDOS COM ==apt-cache==
+
+**PROCURA PACOTES RELACIONADOS A UM TERMO:**
+==apt-cache search termo==
+
+**MOSTRA AS DEPENDÊNCIAS DE UM PACOTE:**
+==apt-cache depends nome_pacote==
+
+**MOSTRA DETALHES DO PACOTE:**
+==apt-cache show nome_pacote==
+
+**LISTA TODOS OS PACOTES QUE ESTÃO DISPONÍVEIS PARA INSTALAÇÃO:**
+==apt-cache pkgnames==
+
+
+## 🧠 Principais comandos `apt` para a LPIC-1
+
+| Comando                      | Função                                                                          |     |     |     |     |
+| ---------------------------- | ------------------------------------------------------------------------------- | --- | --- | --- | --- |
+| `apt update`                 | Atualiza a lista de pacotes disponíveis nos repositórios                        |     |     |     |     |
+| `apt upgrade`                | Atualiza todos os pacotes instalados para as versões mais recentes              |     |     |     |     |
+| `apt install nome_do_pacote` | Instala um novo pacote                                                          |     |     |     |     |
+| `apt remove nome_do_pacote`  | Remove um pacote (mantém arquivos de configuração)                              |     |     |     |     |
+| `apt purge nome_do_pacote`   | Remove completamente o pacote, incluindo arquivos de configuração               |     |     |     |     |
+| `apt autoremove`             | Remove pacotes que não são mais necessários                                     |     |     |     |     |
+| `apt search termo`           | Pesquisa por pacotes nos repositórios                                           |     |     |     |     |
+| `apt show nome_do_pacote`    | Mostra detalhes sobre um pacote                                                 |     |     |     |     |
+| `apt list`                   | Lista pacotes disponíveis, instalados ou atualizáveis                           |     |     |     |     |
+| `apt full-upgrade`           | Similar ao `dist-upgrade`: atualiza pacotes e lida com mudanças de dependências |     |     |     |     |
+| `apt clean`                  | Limpa o cache de pacotes baixados                                               |     |     |     |     |
