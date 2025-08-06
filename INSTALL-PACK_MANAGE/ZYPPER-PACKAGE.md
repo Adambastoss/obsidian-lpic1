@@ -19,4 +19,26 @@ O **Zypper** é o gerenciador de pacotes padrão em distribuições **openSUS
 ``zypper packages --installed-only
 
 ###### EXIBE INFORMAÇÕES DE UM PACOTE:
-``
+``zypper info pacote
+
+###### LISTA REPOSITÓRIOS HABILITADOS:
+``zypper repos  
+
+###### ADICIONA UM REPOSITÓRIO:
+``zypper addrepo
+
+###### ATUALIZAR METADADOS DOS REPOS:
+``zypper refresh
+
+###### VERIFICA DEPENDÊNCIAS QUEBRADAS:
+``zypper verify
+
+###### ENCONTRA QUAL PACOTE FORNECE UM ARQUIVO:
+``zypper what-provides arquivo
+
+### **6️⃣ Histórico de Transações**
+
+| **Comando**        | **Descrição**                        | **Exemplo**           |
+| ------------------ | ------------------------------------ | --------------------- |
+| `zypper history`   | Mostra todas as operações realizadas | `sudo zypper history` |
+| `zypper undo <ID>` | Reverte uma transação específica     | `sudo zypper undo 5`  |

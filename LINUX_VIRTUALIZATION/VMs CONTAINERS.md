@@ -1,0 +1,1 @@
+- Entenda o conceito geral de máquinas virtuais e contêineres
