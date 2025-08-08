@@ -50,6 +50,8 @@ O `cloud-init` é uma peça-chave na **automação** da criação de máquinas v
 
 É basicamente um **script** em **YAML** que cria uma máquina já pré configurada, e esse script pode ser utilizado para criar diversas máquinas idênticas.
 
+No arquivo */etc/cloud/==cloud.cfg*== geralmente são armazenadas configurações persistentes do `cloud-init` em uma instância baseada em Ubuntu.
+
 ### O que é o `cloud-init`?
 
 Pense em uma máquina virtual como um "clone" de uma imagem de sistema operacional. Para ser útil, essa VM precisa ser personalizada com configurações específicas, como:
@@ -65,3 +67,18 @@ Pense em uma máquina virtual como um "clone" de uma imagem de sistema operacion
 - **Instalação de pacotes**: Garantir que ferramentas essenciais (como um servidor web, por exemplo) já estejam instaladas e prontas para uso.
     
 - **Execução de scripts**: Rodar comandos ou scripts de shell na primeira inicialização.
+
+
+##### **cgroups**
+
+Recurso fundamental do kernel Linux que permite **limitar, contabilizar e *isolar* o uso de recursos de um conjunto de processos**.
+
+### Como funcionam os cgroups?
+
+Os cgroups organizam os processos em uma **estrutura hierárquica** (como uma árvore). Cada nó nessa árvore é um grupo de controle (`cgroup`).
+
+- **Grupos de Controle (cgroups):** Cada `cgroup` é associado a um conjunto de processos. Todos os processos em um `cgroup` estão sujeitos às mesmas regras de limitação de recursos.
+    
+- **Controladores (ou subsistemas):** São os módulos do kernel que gerenciam um tipo específico de recurso. Existem controladores para CPU (`cpu`), memória (`memory`), I/O de bloco (`blkio`), entre outros.
+    
+- **Hierarquia:** A estrutura de árvore permite que as configurações sejam herdadas. Por exemplo, se você criar um `cgroup` pai com um limite de 50% de CPU, os `cgroups` filhos dentro dele terão que compartilhar esses 50% entre si.
