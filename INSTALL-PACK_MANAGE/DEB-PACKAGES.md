@@ -6,10 +6,6 @@
 - Obtenha informações do pacote, como versão, conteúdo, dependências, integridade do pacote e status da instalação (se o pacote está instalado ou não).
 - Consciência de apt.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 286e62cf6791739619fd4c8b0c20f07d578ae718
 - **/etc/apt/sources.list**
 		Ele contém uma lista de repositórios onde o APT busca pacotes para instalação, atualização e remoção.
 

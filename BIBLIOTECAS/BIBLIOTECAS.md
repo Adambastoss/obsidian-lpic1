@@ -1,4 +1,4 @@
-Temos bibliotecas estáticas e bibliotecas compartilhadas (dInâmicas)
+Temos bibliotecas **estáticas** e bibliotecas **compartilhadas** (dInâmicas)
 
 Bibliotecas **estáticas**: O código da biblioteca é incorporado ao código do programa. O programa passa a não ter dependência de libs em tempo de execução (externas), mas em compensação ficam mais pesados.
 
@@ -71,6 +71,8 @@ Gerenciar ou cache de bibliotecas compartilhadas no sistema. Ele:
 - Atualiza (**cria**) o conjunto de links simbólicos das bibliotecas;
     
 - Cria (atualiza) o **cache** `/etc/ld.so.cache`;
+- **Criação do cache**: Após processar todos os arquivos, o comando `ldconfig` é executado (normalmente durante a instalação de pacotes) para criar ou atualizar o arquivo de cache `/etc/ld.so.cache`. Este arquivo de cache é uma lista otimizada e binária de todas as bibliotecas encontradas.
+- **Tempo de execução**: Quando um programa precisa de uma biblioteca, o carregador dinâmico consulta o cache `/etc/ld.so.cache` para encontrar o caminho correto de forma rápida, em vez de procurar nos diretórios um a um.
     
 - Leia os diretórios padrão e os listados em `/etc/ld.so.conf`.
 
