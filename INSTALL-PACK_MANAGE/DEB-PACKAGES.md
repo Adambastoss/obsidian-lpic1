@@ -61,6 +61,8 @@ Se algo falhar **durante a configuração**, o pacote ficará com o status de **
 
 
 
+
+
 # **GERENCIADOR DE PACOTES** de ==ALTO NÍVEL==
 
 Resolve todas as dependências de forma automática
