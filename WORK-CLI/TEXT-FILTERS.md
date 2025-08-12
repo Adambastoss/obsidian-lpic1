@@ -40,7 +40,31 @@ Ex:
 `cat -b recebendo.txt
 A flag **-b** irá numerar apenas as linhas ==não vazias==.
 
-------------------------------------------------------------------------
+`cat -E numeros.txt
+Imprime com **caracteres de fim de linha** visíveis
 
+Saída: 
+		1,2,3==$==
+		4,5,6==$==
+		7,8,9==$==
+
+------------------------------------------------------------------------
+`cut
+"**Cortar**" o documento e trazer apenas aquilo que você quer. É importante você analizar um documento antes de utilizar o comando, para verificar qual delimitador os dados estão utilizando e encontrar o melhor possível.
+
+`cut -d "," -f 2 numeros.txt
+
+**-d** = ==delimitador== será uma vírgula **' , '**
+**-f** =  Pegue o segundo **2** ==field== (campo) de cada linha do arquivo **numero.txt**
+
+Saída:
+		2
+		5
+		8
+
+`cut -d ',' -f 2,3 numeros.txt
+Pego o ==field== 2 e 3
+
+------------------------------------------------------------------------
 
 
