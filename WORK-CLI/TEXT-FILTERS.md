@@ -66,5 +66,27 @@ Saída:
 Pego o ==field== 2 e 3
 
 ------------------------------------------------------------------------
+`head numeros.txt
+Pega as **10 primeiras** linhas do documento
 
+`head -n 5 numeros.txt
+**-n** = De numeric **5**  de linhas = Pegar as 5 primeiras linhas de um documento.
+
+------------------------------------------------------------------------
+`less
+**Visualiza arquivos** de forma **==interativa==** (paginado). 
+Navegação: `Espaço` (próxima página), `b` (voltar), `/texto` (busca), `q` (sair).
+
+-----------------------------------------------------------------------------------------------
+`md5sum
+No **Linux**, o comando **`md5sum`** serve para **calcular e/ou verificar o hash MD5** de um arquivo ou entrada de dados.
+
+- **MD5** (_Message Digest 5_) é um algoritmo que gera um **resumo criptográfico** (hash) de **128 bits** representado como **32 caracteres hexadecimais**.
+    
+- É usado para **verificar integridade** de arquivos — ou seja, confirmar que não houve alteração nos dados.
+    
+- Não é seguro para uso criptográfico (colisões conhecidas), mas ainda é comum em verificações de integridade.
+
+**Comando:**  `md5sum arquivo.txt
+**Saída** típica: `d41d8cd98f00b204e9800998ecf8427e  arquivo.txt`
 
