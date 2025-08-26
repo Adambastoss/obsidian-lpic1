@@ -46,4 +46,39 @@ Ordena em ordem reversa
 
 ![[Pasted image 20250823225032.png]]
 
+------------------------------------------------------------------------
+
+#### `tr
+Você quase sempre usará ele com um pipe (`|`) ou redirecionamento.
+#### `echo "hello world" | tr 'a-z' 'A-Z'
+==Saída==:  **HELLO WORD**
+Converte as letras maiúsculas em minúsculas.
+
+#### `echo "Muito     espaço" | tr -s ' '
+==Saída==: **Muito espaço** 
+Compacta mútiplos espaços em um espaço simples
+
+#### `echo "My phone is 61994336210" | tr -d '0-9'
+==Saída==: **My phone is**
+Remove todos os números
+
+#### `echo "My phone is 123456" | tr -cd '0-9'
+==Saída==: **123456**
+Inverte a lógica. **Remove** tudo que **não seja** número.
+**-c '0-9'** significa tudo que não seja dígito de 0 a 9 
+**-d** Apaga tudo que não é dígito
+
+|Flag|Significado|Exemplo de Uso|Por que é Cobrada|
+|---|---|---|---|
+|(Nenhuma)|Substituição simples|`tr 'a' 'b'`|Funcionalidade central do comando.|
+|`-s`|Compactar repetições|`tr -s ' '`|**Muito comum para limpar espaços e quebras de linha.**|
+|`-d`|Deletar caracteres|`tr -d '0-9'`|Habilidade essencial para filtragem.|
+|`-c`|Usar complemento|`tr -cd '0-9'`|Conhecimento avançado para soluções elegantes.|
+|`[:class:]`|Classes de caracteres|`tr '[:lower:]' '[:upper:]'`|Uso de padrões POSIX para portabilidade.|
+
+---------------------------------------------------------------
+
+
+#### `uniq
+O comando `uniq` é usado para **identificar ou filtrar linhas repetidas consecutivas** em um arquivo ou fluxo de texto.
 
