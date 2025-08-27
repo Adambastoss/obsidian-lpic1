@@ -68,17 +68,53 @@ Inverte a lógica. **Remove** tudo que **não seja** número.
 **-c '0-9'** significa tudo que não seja dígito de 0 a 9 
 **-d** Apaga tudo que não é dígito
 
-|Flag|Significado|Exemplo de Uso|Por que é Cobrada|
-|---|---|---|---|
-|(Nenhuma)|Substituição simples|`tr 'a' 'b'`|Funcionalidade central do comando.|
-|`-s`|Compactar repetições|`tr -s ' '`|**Muito comum para limpar espaços e quebras de linha.**|
-|`-d`|Deletar caracteres|`tr -d '0-9'`|Habilidade essencial para filtragem.|
-|`-c`|Usar complemento|`tr -cd '0-9'`|Conhecimento avançado para soluções elegantes.|
-|`[:class:]`|Classes de caracteres|`tr '[:lower:]' '[:upper:]'`|Uso de padrões POSIX para portabilidade.|
+| Flag        | Significado           | Exemplo de Uso               | Por que é Cobrada                                       |
+| ----------- | --------------------- | ---------------------------- | ------------------------------------------------------- |
+| (Nenhuma)   | Substituição simples  | `tr 'a' 'b'`                 | Funcionalidade central do comando.                      |
+| `-s`        | Compactar repetições  | `tr -s ' '`                  | **Muito comum para limpar espaços e quebras de linha.** |
+| `-d`        | Deletar caracteres    | `tr -d '0-9'`                | Habilidade essencial para filtragem.                    |
+| `-c`        | Usar complemento      | `tr -cd '0-9'`               | Conhecimento avançado para soluções elegantes.          |
+| `[:class:]` | Classes de caracteres | `tr '[:lower:]' '[:upper:]'` | Uso de padrões POSIX para portabilidade.                |
 
 ---------------------------------------------------------------
 
 
 #### `uniq
 O comando `uniq` é usado para **identificar ou filtrar linhas repetidas consecutivas** em um arquivo ou fluxo de texto.
+
+
+#### `uniq arquivo.txt
+uniq sem flag, remove todas as linhas repetidas consecutivas.
+
+![[Pasted image 20250826204816.png]]
+
+#### `uniq -c cores.txt
+**-c** precede todas as linhas com o número de vez que ela se repetiu consecutivamente.
+
+![[Pasted image 20250826205617.png]]
+
+#### `uniq -u cores.txt
+-u (unique) Mostra apenas linhas que não se repetiram.
+
+#### `uniq -d cores.txt
+Mostra apenas as linhas que se repetiram
+
+------------------------------------------------------------------------
+
+#### `wc
+
+#### `wc -l cores.txt
+Conta **linhas**
+
+#### `wc -c cores.txt
+Conta **caracteres**
+
+#### `wc -w cores.txt
+Conta **palavras**
+
+------------------------------------------------------------------------
+
+#### `xzcat
+Exibe conteúdo de arquivos que foram **compactados** com **xz**
+
 
