@@ -1,4 +1,5 @@
 
+### **CP**
 ##### ==COPIAR UM ARQUIVO PARA O DIR ATUAL==
 `cp /dir/arquivo .
 (O **.** indica o diretório atual )
@@ -11,5 +12,8 @@
 
 ==COPIAR E MANTER AS PERMISSÕES==
 `cp -p /dir/nomepasta_origem /diretorio_destino
+
+----------------------------------------------------------------
+### **FIND**
 
 
