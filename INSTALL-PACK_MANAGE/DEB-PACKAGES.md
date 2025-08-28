@@ -45,6 +45,9 @@ Gerenciador de baixo nível padrão: **dpkg**
 
 ==CONFIGURAR UM PACOTE:==
 **dpkg --configure nome_pacote**
+
+==BUSCAR PACOTES QUE POSSUEM DETERMINADO ARQUIVO==
+**dpkg -S nome_arquivo**
 ### 🧠 Contexto:
 
 Durante a instalação de um pacote `.deb`, o `dpkg` segue basicamente **duas etapas**:

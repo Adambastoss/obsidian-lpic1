@@ -115,6 +115,6 @@ Conta **palavras**
 ------------------------------------------------------------------------
 
 #### `xzcat
-Exibe conteúdo de arquivos que foram **compactados** com **xz**
+Tanto `zcat` quanto `xzcat` são utilitários para **visualizar o conteúdo de arquivos compactados sem precisar descompactá-los explicitamente**.
 
 
