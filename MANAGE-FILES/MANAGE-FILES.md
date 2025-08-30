@@ -126,6 +126,22 @@ Define a data para 25 de Dezembro de 2023, 14:30:00
 `touch -r original.txt copia.txt
 Faz com que o arquivo copia tenha o mesmo timestamp do arquivo original
 
+![[Pasted image 20250830134543.png]]
+
+
 ------------------------------------------------------------------------
 
+### **TAR**
+
+**==CRIAR UM ARQUIVO COMPACTADO==**
+`tar -cvf nome_arquivo_compac.tar nome_arquivo_para_compactar
+c - create / v - verbose / f - file
+
+==**DESCOMPACTAR ARQUIVO**== 
+`tar -xvf nome_arquivo_compactado.tar
+x - extract / v - verbose / f - file
+
+==**LISTAR ARQUIVOS SEM EXTRAIR**==
+`tar -tvf nome_arquivo_compactado.tar
+t - list / v - verbose / f - file
 
