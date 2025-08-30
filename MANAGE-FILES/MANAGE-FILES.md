@@ -109,6 +109,23 @@ Procura e localiza arquivos e diretórios.
 
 ------------------------------------------------------------------------
 ### **TOUCH**
+Sua função principal é **alterar timestamps de arquivos**, mas PODE servir também para criar arquivos, que não é sua função principal.
 
+**==ALTERA A DATA DE MODIFICAÇÃO DO ARQUIVO PARA AGORA==**
+`touch -m arquivo.txt
+
+**==ALTERAR TIMESTAMP DE UM ARQUIVO SE ELE EXISTIR==**
+``touch -c arquivo.txt
+Se o arquivo não existir, esse comando não cria um novo arquivo e não apresenta erro.
+
+==**DEFINIR UM TIMESTAMP ESPECÍFICO**==
+`touch -t 202312151430 arquivo.txt
+Define a data para 25 de Dezembro de 2023, 14:30:00
+
+**==USAR A DATA DE OUTRO ARQUIVO COMO REFERÊNCIA==**
+`touch -r original.txt copia.txt
+Faz com que o arquivo copia tenha o mesmo timestamp do arquivo original
+
+------------------------------------------------------------------------
 
 
