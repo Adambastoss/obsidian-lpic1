@@ -66,3 +66,49 @@ Procura e localiza arquivos e diretórios.
 ==**CRIA UMA PASTA COM MODO VERBOSO, EXIBE MENSAGEM DE CRIAÇÃO**==
 ``mkdir -v nome_pasta
 
+------------------------------------------------------------------------
+
+### **MV**
+
+**==MOVER ARQUIVO PARA OUTRO DESTINO==**
+`mv origem/arquivo destino
+
+**==RENOMEAR UM ARQUIVO==**
+`mv frutas.txt frutas_novo.txt
+
+==**ADICIONAR CONFIRMAÇÃO ANTES DE MOVER (modo interativo)**==
+`mv -i frutas.txt ../diretorio_destino
+
+**==NÃO PERGUNTA E SOBREESCREVE MESMO QUE O ARQUIVO JÁ EXISTA==**
+`mv -f frutas.txt ../destino
+
+------------------------------------------------------------------------
+### **LS**
+
+**==LISTAR DIRETÓRIOS E ARQUIVOS OCULTOS==**
+`ls -a
+
+**==LISTAR ARQUIVOS COM TAMANHOS LEGÍVEIS (human readable)==**
+`ls -lh
+
+**==LISTA POR TEMPO DE MODIFICAÇÃO==**
+`ls -lt
+
+==**LISTA ORGANIZANDO POR TAMANHO**==
+`ls -lS
+
+------------------------------------------------------------------------
+
+### **RM** / **RMDIR**
+
+**==REMOVER UM DIRETÓRIO E TUDO QUE TEM DENTRO==**
+`rm -r diretorio
+
+**==REMOVER UM DIRETÓRIO VAZIO==**
+`rmdir diretorio
+
+------------------------------------------------------------------------
+### **TOUCH**
+
+
+
