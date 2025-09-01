@@ -81,8 +81,11 @@ Resolve todas as dependências de forma automática
 **ATUALIZA A LISTA DE PACOTES DISPONÍVEIS:**
 ==apt-get update==
 
-**ATUALIZA TODOS OS PACOTES INSTALADOS:**
+**ATUALIZA TODOS OS PACOTES INSTALADOS:** (Sem alterar dependências)
 ==apt-get upgrade==
+
+**ATUALIZA TODOS OS PACOTES INSTALADOS E TAMBÉM LIDA COM MUDANÇAS DE DEPEND.**
+==apt-get dist-upgrade==
 
 **INSTALA UM PACOTE:**
 ==apt-get install nome_pacote==

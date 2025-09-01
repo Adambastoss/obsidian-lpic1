@@ -86,7 +86,16 @@ O `initramfs` resolve um problema: o **kernel precisa acessar o disco** para mon
 4. O controle é passado para o sistema real (como `/sbin/init` ou `systemd`).
 
 
+Diferença entre `initrd` e `initramfs`
+O **initrd** tem a basicamente a mesma função do **initramfs**, porém é mais antigo. O `initrd` é mais comum em sistemas legados, enquanto o `initramfs` é o padrão atual.
 
+| Característica  | `initrd`                            | `initramfs`                      |
+| --------------- | ----------------------------------- | -------------------------------- |
+| Tipo de arquivo | Imagem de disco (geralmente ext2)   | Arquivo compactado (cpio + gzip) |
+| Montagem        | Montado como um **loopback device** | Extraído diretamente na memória  |
+| Persistência    | Precisa ser desmontado              | Descartado automaticamente       |
+| Flexibilidade   | Menos flexível                      | Mais leve e moderno              |
+| Kernel support  | Suportado por kernels mais antigos  | Padrão em kernels modernos       |
 
 
 

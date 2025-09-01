@@ -145,3 +145,8 @@ x - extract / v - verbose / f - file
 `tar -tvf nome_arquivo_compactado.tar
 t - list / v - verbose / f - file
 
+**==EXTRAIR ARQUIVOS PARA UM DIRETÓRIO ESPECÍFICO==**
+`tar -xvf nome_arquivo_compactado.tar -C diretorio_destino
+-C - Controla o local de extração
+
+

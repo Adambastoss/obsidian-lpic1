@@ -4,13 +4,12 @@
 **echo** ==“Qualquer coisa”== - Ecoar “Qualquer coisa” na tela
 
 **uname -r** - Mostra a versão do Kernel
------------------------------------------------------------------------------------------------
+
 - **>** - ==Redirecionar== uma saída para algum lugar. Ex: Redicionar “nada a ver” para um arquivo chamado teste
 		**echo** ==nada a ver== **>** ==teste==
 
 Mesmo que o arquivo teste não exista, ele será criado com o texto “nada a ver”
 
-**
 
 - **>>**  - Append | **Acrescenta** um conteúdo dentro de um arquivo. Ex: Acrescentar “nada a ver” dentro do arquivo teste já existente:
 
@@ -50,21 +49,23 @@ Este comando mostrará todos os arquivos que contém ==Linux== no nome
 **history -w** - Salva a alteração, ==exclusão== de um comando ou do histórico completo, fazendo que o histórico não seja restaurado na próxima sessão.
 
 ------------------------------------------------------------------------
-**which** comando - Localiza o caminho completo de um comando executável no sistema.
-	Ex: **which mkdir**
+### **WHICH**
+Localiza o **caminho** completo de um comando **executável** no sistema.
+	Ex: `which mkdir
 		Saída: **/usr/bin/mkdir**
 
-**type** - Identifica como um comando será interpretado pelo shell. 
-Ele mostra se o comando é:
+------------------------------------------------------------------------
+### **TYPE**
 
-- **Comando interno** (integrado) do shell
-    
-- **Função** definida no shell
-    
-- **Pseudônimo**
-    
-- **Arquivo encontrado** no sistema
-**type cd** > saída:  ==cd is a shell builtin==
+**==MOSTRA O CAMINHO ABSOLUTO DO EXECUTÁVEL==**
+`type -p comando
+
+**==MOSTRA APENAS O TIPO DO COMANDO==** (alias, builtin, file, function)
+`type -t comando
+
+**==MOSTRA TODAS AS OCORRÊNCIAS DO COMANDO NO PATH==**, incluindo **aliases**
+`type -a comando
+
 ------------------------------------------------------------------------
 ##### Quoting
 
